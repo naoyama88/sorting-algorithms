@@ -16,7 +16,8 @@ function generateRandomNumbers(numnum) {
 }
 
 function displaySortedNumbers(sortFunction) {
-    let sortedArray = sortFunction(randomNumbers);
+    let randNumArr = [...randomNumbers];
+    let sortedArray = sortFunction(randNumArr);
     document.getElementById("boxRight").innerHTML = sortedArray;
 }
 
