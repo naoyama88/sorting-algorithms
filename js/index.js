@@ -1,7 +1,7 @@
 let randomNumbers;
 
-function displayNumbers() {
-    randomNumbers = generateRandomNumbers(100);
+function displayNumbers(num) {
+    randomNumbers = generateRandomNumbers(num);
     document.getElementById("randomNumbers").innerHTML = randomNumbers;
 }
 
@@ -21,10 +21,6 @@ function displaySortedNumbers(sortFunction) {
     document.getElementById("boxRight").innerHTML = sortedArray;
 }
 
-document.getElementById("generateNumber").addEventListener("click", displayNumbers);
-document.getElementById("bubbleSort").addEventListener("click", function() {
-    displaySortedNumbers(bubbleSort);
-});
-document.getElementById("selectionSort").addEventListener("click", function() {
-    displaySortedNumbers(selectionSort);
-});
+document.getElementById("generateNumber").addEventListener("click", () => {displayNumbers(100)});
+document.getElementById("bubbleSort").addEventListener("click", () => {displaySortedNumbers(bubbleSort)});
+document.getElementById("selectionSort").addEventListener("click", () => {displaySortedNumbers(selectionSort)});

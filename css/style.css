@@ -207,3 +207,30 @@ body * {
     word-wrap: break-word;
 }
 
+.box__bottom > button {
+    margin: 2px;
+    height: 30px;
+    color: white;
+    background-color: #6395d6;
+    border-radius: 15px;
+    border: none;
+}
+
+.box__bottom > button:focus {
+    outline: none;
+}
+
+.box__bottom > button {
+    margin: 2px;
+    height: 30px;
+    color: white;
+    background-color: #6395d6;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.box__bottom > button:hover {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
